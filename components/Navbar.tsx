@@ -8,11 +8,11 @@ const Navbar = () => {
         <div className="">
           <Link href="/" className='"logo flex items-center space-x-2'>
             <Image
-              src="/icons/logo.png"
+              src="/icons/aaa.jpg"
               alt="logo"
               width={24}
               height={24}
-              className=""
+              className="bg-amber-700"
             />
             <p className="hidden md:block">Upcoming Events</p>
           </Link>
@@ -21,7 +21,8 @@ const Navbar = () => {
         <ul>
           <Link href="/">Home</Link>
           <Link href="/">Events</Link>
-          <Link href="/">Create Event</Link>
+          <Link href="/">Contact</Link>
+          <Link href="/">Ticket</Link>
         </ul>
       </nav>
     </header>
