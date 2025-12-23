@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import LightRays from "@/components/LightRays";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +31,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        <div className="absolute inset-0 mtop-0 z-[-1] min-h-screen">
+        {/*  <div className="absolute inset-0 mtop-0 z-[-1] min-h-screen">
           <LightRays
             raysOrigin="top-center"
             raysColor="#5dfaeca"
@@ -42,9 +43,10 @@ export default function RootLayout({
             noiseAmount={0.0}
             distortion={0.01}
           />
-        </div>
+        </div> */}
 
         {children}
+        <Footer />
       </body>
     </html>
   );

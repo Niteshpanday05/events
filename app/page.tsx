@@ -16,9 +16,8 @@ export default function Page() {
         <ExploreBtn />
 
         <div className="p-10 ">
-          <div className="mt-20  space-x-7">
-            <h3>Featured Events</h3>
-            <h3>Featured Products</h3>
+          <div className="mt-20  space-x-7 space-y-4">
+            <h3 className="">Featured Events</h3>
 
             <ul className="events">
               {events.map((event) => (
