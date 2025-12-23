@@ -1,6 +1,8 @@
-import React from "react";
+import ExploreBtn from "@/components/ExploreBtn";
+import EventCard from "@/components/EventCard";
+import { events } from "@/lib/constants";
 
-const page = () => {
+export default function Page() {
   return (
     <div>
       <section>
@@ -10,9 +12,24 @@ const page = () => {
         <p className="text-center mt-5">
           Hacathons, Meetup, and Coonference, All in One Place
         </p>
+
+        <ExploreBtn />
+
+        <div className="p-10 ">
+          <div className="mt-20  space-x-7">
+            <h3>Featured Events</h3>
+            <h3>Featured Products</h3>
+
+            <ul className="events">
+              {events.map((event) => (
+                <li key={event.title}>
+                  <EventCard {...event} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </section>
     </div>
   );
-};
-
-export default page;
+}
