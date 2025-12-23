@@ -4,7 +4,7 @@ import { events } from "@/lib/constants";
 
 export default function Page() {
   return (
-    <div>
+    <div className="bg-[#0A1828] text-[#BFA181]">
       <section>
         <h1 className="text-center ">
           The Hub for Every Dev <br /> Event You Can't Miss

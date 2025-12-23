@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-sky-950 text-gray-300">
+    <footer className="bg-[#0A1828] text-[#178582] ">
       <div className="mx-auto max-w-7xl px-6 py-6">
         {/* Top section */}
         <div className="grid gap-12 md:grid-cols-4">
@@ -12,7 +12,7 @@ export default function Footer() {
               <div className=""></div>
               <h2 className="text-xl font-bold text-white">Upcoming Events</h2>
             </div>
-            <p className="mt-4 text-sm text-gray-400 leading-relaxed">
+            <p className="mt-4 text-sm  leading-relaxed">
               Discover developer events, tech meetups, and conferences happening
               around the world.
             </p>

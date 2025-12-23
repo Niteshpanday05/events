@@ -18,7 +18,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <ul>
+        <ul className="text-[#178582]">
           <Link href="/">Home</Link>
           <Link href="/">Events</Link>
           <Link href="/">Contact</Link>
